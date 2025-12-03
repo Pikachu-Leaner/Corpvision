@@ -1,0 +1,23 @@
+.box-wrap {
+
+padding: 40px 30px;
+
+border-radius: $border-radius;
+
+text-align: center;
+
+box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+
+background-color: var(--background-color);
+
+transition: .3s ease;
+
+-webkit-transition: .3s ease;
+
+-moz-transition: .3s ease;
+
+-ms-transition: .3s ease;
+
+-o-transition: .3s ease;
+
+}

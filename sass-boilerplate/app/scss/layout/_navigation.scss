@@ -1,0 +1,17 @@
+.navbar-nav {
+  .nav-item {
+    font-size: 25px;
+    padding: 0 12px;
+    color: var(--nav-menu);
+  }
+
+  .nav-link {
+    color: var(--nav-menu);
+
+    &.active,
+    &.show {
+      color: var(--primary-color);
+      opacity: 0.9;
+    }
+  }
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpvision</title>
+    <script defer src="./app/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./app/scss/style.scss">
+    <link rel="stylesheet" href="./app/scss/components/_button.scss">
+    <link rel="stylesheet" href="./app/scss/vendors/_index.scss">
+</head>
+
+<body class="dark-mode">
+    <!-- bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Header -->
+
+    <header class="fixed-top nav-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark stroke">
+                <h1>
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/html/main-page.html">
+                        <i class="fa fa-align-right"></i>
+                        Corp Vision
+                        <span class="logo">Vision to your Future</span>
+                    </a>
+                </h1>
+
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                                        <li><a class="dropdown-item" href="#">404 page</a></li>
+                                        <li><a class="dropdown-item" href="#">Landing page</a></li>
+                                        <li><a class="dropdown-item" href="#">Elements page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--search button-->
+                    <div class="header-search HeaderSearch">
+                        <div class="control mr-3">
+                            <div class="btn-material">
+                                <i class="fa fa-search icon-material-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dark/light mode theme button -->
+                    <button id="theme-switch" class="theme-button">
+                        <i class="fa fa-moon theme-icon"></i>
+                        <i class="fa fa-sun theme-icon"></i>
+                    </button>
+                </nav>
+        </div>
+    </header>
+    <!-- carsouel -->
+    <div class="banner-wrapper">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Banner 1-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../images/b1.jpg" alt="First slide">
+                    <div class="carousel-caption1 d-none d-md-block">
+                        <h1 class="animate__animated animate__flipInX animate__delay-1s">We will solve your issues our
+                            vision to your future</h1>
+                        <p class="animate__animated animate__fadeInDown animate__slow">Lorem ipsum dolor sit amet, elit,
+                            sed
+                            do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                        <button type="button"
+                            class="animate__animated animate__fadeInUp animate__delay-1s btn btn-success btn-style">Learn
+                            More</button>
+                    </div>
+                </div>
+                <!-- Banner 2-->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/b2.jpg" alt="Second slide">
+                    <div class="carousel-caption1 d-none d-md-block">
+                        <h1 class="animate__animated animate__fadeInUp animate__delay-1s">For those who believe in
+                            leaving a
+                            mark</h1>
+                        <p class="animate__animated animate__fadeInUp animate__slow">Lorem ipsum dolor sit amet, elit,
+                            sed
+                            do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                        <button type="button"
+                            class="animate__animated animate__fadeInDown animate__delay-1s btn btn-success btn-style">Contact
+                            Now</button>
+                    </div>
+                </div>
+                <!-- Banner 3-->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/b3.jpg" alt="Third slide">
+                    <div class="carousel-caption1 d-none d-md-block">
+                        <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Embracing success do our best,
+                            need best advice</h1>
+                        <p class="animate__animated animate__fadeInUp animate__slow">Lorem ipsum dolor sit amet, elit,
+                            sed
+                            do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                        <button type="button"
+                            class="animate__animated animate__fadeInDown animate__delay-1s btn btn-success btn-style">Get
+                            Started</button>
+                    </div>
+                </div>
+                <!-- Banner 4-->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/b4.jpg" alt="Fourth slide">
+                    <div class="carousel-caption1 d-none d-md-block">
+                        <h1 class="animate__animated animate__flipInX animate__delay-1s">Digital transformation driven
+                            by
+                            technology</h1>
+                        <p class="animate__animated animate__fadeInDown animate__slow">Lorem ipsum dolor sit amet, elit,
+                            sed
+                            do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                        <button type="button"
+                            class="animate__animated animate__fadeInUp animate__delay-1s btn btn-success btn-style">Learn
+                            More</button>
+                    </div>
+                </div>
+                <!-- Button for carousel-->
+                <div class="carousel-custom-nav">
+                    <button class="btn-custom-nav me-2" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="btn-custom-nav" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Wave below banner -->
+    <path fill-opacity="1">
+        <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+              M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
+        </animate>
+    </path>
+
+    <!-- About us -->
+    <section class="p-5 bg-white">
+        <div class="container p-0 mt-15">
+            <div class="row align-items-center justify-content-evenly">
+                <div class="col-lg-6">
+
+                    <!-- Subtitle -->
+                    <span class="subtitle">About Us</span>
+
+                    <!-- Main Headline -->
+                    <h1 class="main-title">
+                        We make the best strategies for you, Enhancing your success
+                    </h1>
+
+                    <!-- Paragraph Description -->
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.
+                    </p>
+
+                    <!-- Left col -->
+                    <ul class="features-list pt-lg-2 mt-4">
+
+                        <!-- Item 1 -->
+                        <li class="feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>UI/UX Design and Development</span>
+                        </li>
+
+                        <!-- Item 2 -->
+                        <li class="feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Branding Design and Identity</span>
+                        </li>
+
+                        <!-- Item 3 -->
+                        <li class="feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Mobile App Design and Development</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Right col-->
+                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                    <!-- Add another row to split to 2 -->
+                    <div class="row position-relative">
+
+                        <!-- small col left-->
+                        <div class="col-6">
+                            <img src="../images/a.jpg" alt class="radius-image img-fluid">
+                        </div>
+
+                        <!-- small col right-->
+                        <div class="col-6 mt-4">
+                            <img src="../images/c1.jpg" alt class="radius-image img-fluid mb-md-3 mb-2">
+                            <img src="../images/c4.jpg" alt class="radius-image img-fluid mt-md-3">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Every day brings new challenges -->
+    <section class=".bg-light">
+        <div class="container p-0 mt-15">
+            <div class="row align-items-center justify-content-evenly">
+                <div class="col-lg-6">
+
+                    <!-- Subtitle -->
+                    <span class="subtitle">Every day brings new challenges</span>
+
+                    <!-- Main Headline -->
+                    <h1 class="main-title">
+                        Creative agency focused on vision, product and people
+                    </h1>
+
+                    <!-- Paragraph Description -->
+                    <p class="description">
+                        Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque
+                        ut
+                        lectus consequat,
+                        venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse non init magnaa
+                        velit efficitur, dolor
+                        eget ex fermentum.
+                    </p>
+
+                    <a href="#about" class="btn btn-success btn-style">
+                        Discover More
+                    </a>
+
+                </div>
+                <!-- Right col-->
+                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                    <!-- Add another row to split to 2 -->
+                    <div class="row position-relative justify-content-md-center">
+
+                        <!-- small col left-->
+                        <div class="col-6 justify-content-md-center">
+                            <div class="box-wrap text-center">
+                                <img src="../images/icon1.png" alt class="icon-banner1">
+                                <h4>
+                                    <a href="#url" class="title-head">Our Process</a>
+                                </h4>
+                            </div>
+
+                            <div class="box-wrap text-center">
+                                <img src="../images/icon2.png" alt class="icon-banner1">
+                                <h4>
+                                    <a href="#url" class="title-head">UI/UX Design</a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <!-- small col right-->
+                        <div class="col-6 justify-content-md-center ">
+                            <div class="box-wrap text-center">
+                                <img src="../images/icon3.png" alt class="icon-banner1">
+                                <h4>
+                                    <a href="#url" class="title-head">How We Help</a>
+                                </h4>
+                            </div>
+
+                            <div class="box-wrap text-center">
+                                <img src="../images/icon4.png" alt class="icon-banner1">
+                                <h4>
+                                    <a href="#url" class="title-head">Creative Ideas</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Always there for your care, our Services -->
+    <section class="p-5 bg-white">
+        <div class="container p-0 mt-15">
+            <!-- Subtitle -->
+            <h3 class="main-title text-center">
+                Always there for your care, our Services
+            </h3>
+            <div class="row align-items-center justify-content-evenly">
+                <!-- banner 1-->
+                <div class="col-lg-4">
+                    <!-- banner img-->
+                    <a href="#url" class="d-block zoom">
+                        <img src="../images/s1.jpg" alt class="icon-banner1 service-image">
+                    </a>
+                    <!-- Info banner -->
+                    <div class="blog-info text-center">
+                        <a href="#url" class="title">Work Expertise</a>
+                        <p class="description">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+                    </div>
+                </div>
+                <!-- banner 2-->
+                <div class="col-lg-4">
+                    <!-- banner img-->
+                    <a href="#url" class="d-block zoom">
+                        <img src="../images/s2.jpg" alt class="icon-banner1 service-image">
+                    </a>
+                    <!-- Info banner -->
+                    <div class="blog-info text-center">
+                        <a href="#url" class="title">Product Development</a>
+                        <p class="description">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+                    </div>
+
+                </div>
+                <!-- banner 3-->
+                <div class="col-lg-4">
+                    <!-- banner img-->
+                    <a href="#url" class="d-block zoom">
+                        <img src="../images/s3.jpg" alt class="icon-banner1 service-image">
+                    </a>
+                    <!-- Info banner -->
+                    <div class="blog-info text-center">
+                        <a href="#url" class="title">Software Development</a>
+                        <p class="description">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    
+
+    <!-- boostrap script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+<!-- <button class="btn btn-primary rounded-circle" type="submit">Button</button>
+<i class="fa-regular fa-moon"></i> -->

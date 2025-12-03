@@ -1,0 +1,82 @@
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+// heading, text
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #7e7d7d;
+  display: block;
+}
+
+.main-title {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.description {
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 27px;
+  color: var(--font-color);
+  opacity: 0.8;
+  font-family: $font-primary;
+}
+
+.feature-item {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.title-head {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 25px;
+  display: block;
+  color: var(--heading-color);
+}
+
+.py-5 {
+  padding-bottom: 3rem !important;
+  padding-top: 3rem !important;
+}
+
+.service-image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.blog-info .title {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--heading-color);
+  text-align: center;
+  background: var(--bg-color);
+  padding: 12px 35px;
+  display: inline-block;
+  border: 1px solid var(--border-color);
+  border-radius: $border-radius;
+  transform: translateY(-25px);
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+}
+
+.d-block {
+    display: block !important;
+}
