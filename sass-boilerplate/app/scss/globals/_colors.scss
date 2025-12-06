@@ -1,0 +1,62 @@
+:root {
+  --blue: #288ad6;
+  --green: #16c98d;
+  --red: #fa5e5b;
+  --yellow: #feef6d;
+  --orange: #fe7c08;
+  --pink: #ff708e;
+  --purple: #8e44ad;
+  --gray: #95a5a6;
+
+  --dark: #000;
+  --bright: #fff;
+
+  // Links
+  // --color-link-default:
+  // --color-link-visited:
+  // --color-link-hover:
+  // --color-link-active:
+
+  // brands-color
+  --twitter: #55acee;
+  --facebook: #3b5998;
+  --youtube: #cd201f;
+  --pinterest: #bd081c;
+  --instagram: #e4405f;
+  --whatsapp: #25d366;
+
+  --text: #ffffff;
+  --heading-color: #000000;
+  --black: #000000;
+  --bg-header: #3f3a64;
+  --nav-menu: #3f3a64;
+  --theme-btn: #ffffff;
+  --btn: #00a63f; // Fixed invalid var(--#hex) syntax from original
+  --primary-color: #242b5e;
+  --accent-color: #20c997;
+  --font-color: #666;
+  --background-color: #ffffff;
+  --border-color: transparent;
+}
+
+.dark-mode {
+  --text: #ffffff;
+  --heading-color: #000000;
+  --black: #000000;
+  --bg-header: #3f3a64;
+  --nav-menu: #3f3a64;
+  --theme-btn: #ffffff;
+  --btn: #00a63f;
+  --primary-color: #242b5e;
+  --accent-color: #20c997;
+  --font-color: #666;
+  --border-color: transparent;
+  --background-color: #ffffff;
+
+  --twitter: #55acee;
+  --facebook: #3b5998;
+  --youtube: #cd201f;
+  --pinterest: #bd081c;
+  --instagram: #e4405f;
+  --whatsapp: #25d366;
+}

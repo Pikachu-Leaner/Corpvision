@@ -1,0 +1,86 @@
+.theme-button {
+  width: 24px;
+  height: 24px;
+  .theme-icon {
+    color: var(--theme-btn);
+  }
+}
+
+#theme-switch {
+  height: 50px;
+  margin-top: 7px;
+  padding: 0;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  right: 300px;
+
+  i {
+    fill: var(--text);
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+// Logic for switching icons based on parent class
+.dark-mode #theme-switch {
+  i:first-child {
+    display: none;
+  }
+  i:last-child {
+    display: block;
+  }
+}
+
+.project-item {
+  cursor: pointer;
+
+  .project-overlay {
+    background-color: rgba(52, 73, 94, 0.85);
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease-in-out;
+
+    // 1. TARGET THE ANIMATED ELEMENTS
+    // Target any element with the 'animate__animated' class inside our overlay
+
+    .animate__animated {
+      opacity: 0; // Ensure it's invisible initially
+
+      animation: none; // STOP the library from running the animation on load
+    }
+  }
+
+  // 2. THE HOVER TRIGGER
+
+  &:hover {
+    .project-overlay {
+      opacity: 1;
+
+      // When hovered, we tell the element to look at its own class name
+
+      // and run that animation.
+
+      .animate__animated {
+        // This re-enables the animation defined in your HTML classes
+
+        animation-name: slideInUp;
+
+        animation-duration: 0.5s;
+
+        animation-fill-mode: forwards;
+
+        // Make it visible
+
+        opacity: 1;
+      }
+    }
+  }
+}
