@@ -1,0 +1,71 @@
+.box-wrap {
+  padding: 40px 30px;
+
+  border-radius: var(--border-radius);
+
+  text-align: center;
+
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+
+  background-color: var(--background-color);
+
+  transition: 0.3s ease;
+
+  -webkit-transition: 0.3s ease;
+
+  -moz-transition: 0.3s ease;
+
+  -ms-transition: 0.3s ease;
+
+  -o-transition: 0.3s ease;
+}
+
+.project-item {
+  cursor: pointer;
+  .project-overlay {
+    background-color: rgba(52, 73, 94, 0.85);
+    // Start fully visible
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:hover {
+    .project-overlay {
+      // Make the overlay transparent, revealing the image beneath.
+      opacity: 1;
+    }
+  }
+}
+
+.card-size1 {
+  width: 400px;
+  height: 450px;
+}
+
+.news-card .card-header {
+    /* Stop img being flow outside the card*/
+    overflow: hidden; 
+    border-radius: var(--border-radius); 
+}
+
+.news-card .card-img-top {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.news-card:hover .card-img-top {
+    transform: scale(1.15); 
+}
+
+.card-title1 {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 10px;
+  &:hover {
+    color: var(--btn);
+  }
+}

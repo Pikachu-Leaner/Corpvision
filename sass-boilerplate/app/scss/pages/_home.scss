@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+// Define your variables
+$header-padding: 20px 0;
+$header-transition: all 0.4s ease;
+
+.nav-header {
+  // 1. Make the background transparent
+  background-color: transparent;
+
+  // 2. Add padding for spacing
+  padding: $header-padding;
+
+  // 3. Add transition (useful if you add a dark background on scroll later)
+  transition: $header-transition;
+
+  // 4. Ensure links are white so they are visible on the dark image
+  .navbar-nav .nav-link {
+    color: var(--nav-menu);
+
+    &.active {
+      color: #009f4d; // Your primary color
+    }
+  }
+ 
+
+  // Optional: If you want to customize the "fixed-top" behavior specifically here
+  &.fixed-top {
+    z-index: 999;
+  }
+}
+
+.features-list {
+  padding-left: 0;
+  list-style: none;
+
+  .feature-item {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    i {
+      color: var(--accent-color);
+      font-size: 1.25rem;
+      margin-right: 1rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  padding-right: 15px; // Note: This is very large, ensure this is intentional
+  padding-left: 15px;
+}
+
+.testi-des {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  text-align: left;
+  grid-gap: 20px;
+}

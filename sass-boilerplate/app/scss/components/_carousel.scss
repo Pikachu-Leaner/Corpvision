@@ -1,0 +1,88 @@
+.banner-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item {
+  max-height: 800px;
+  object-fit: fill;
+  position: relative;
+
+  h1 {
+    font-size: 65px;
+    padding: 0px 0px 18px;
+    max-width: 800px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: var(--text);
+  }
+
+  .quote1 {
+    font-size: 20px;
+    max-width: 600px;
+    font-weight: 600;
+    opacity: 0.9;
+    line-height: 30px;
+    margin-bottom: 18px;
+    letter-spacing: 0.2px;
+    color: var(--text);
+  }
+
+  .btn-style {
+    padding: 15px 60px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+  }
+}
+
+.carousel-caption1 {
+  top: 200px;
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: var(--bs-carousel-caption-color, #fff);
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+
+  button {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-color: var(--indicator-inactive);
+    border: none;
+    opacity: 0.5;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      // Scales 15px up to approx 20px
+      transform: scale(1.33);
+      background-color: #333;
+      opacity: 1;
+    }
+
+    // Active State
+    &.active {
+      background-color: var(--indicator-active);
+      transform: scale(1.33);
+      opacity: 1;
+      cursor: default;
+    }
+  }
+}
+
+.feedback {
+  height: 350px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--indicator-inactive);
+  margin-right: 8px;
+  margin-left: 8px;
+}
