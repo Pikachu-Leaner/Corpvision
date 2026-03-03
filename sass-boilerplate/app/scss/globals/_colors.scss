@@ -39,23 +39,41 @@
   --border-color: transparent;
   --indicator-active: #333456;
   --indicator-inactive: #9fa0b5;
+  --carosel-btn: #000000;
+  --carosel-btn-bg: #ffffff;
+  --bg-white: rgba(255, 255, 255, 1);
+  --bg-light: rgba(248, 249, 250, 1);
+  --main-title-color: #343a40;
+  --card-bg: #ffffff;
+  --card-title: #333456;
+  --card-icon-title: #000000;
+  --wave-color:  #ffffff;
 }
 
 .dark-mode {
   --text: #ffffff;
-  --heading-color: #000000;
+  --heading-color: #ffffff;
   --black: #000000;
   --bg-header: #3f3a64;
   --nav-menu: #3f3a64;
   --theme-btn: #ffffff;
   --btn: #00a63f;
-  --primary-color: #242b5e;
+  --primary-color: #ffffff;
   --accent-color: #20c997;
-  --font-color: #666;
+  --font-color: #c2c2c2;
   --border-color: transparent;
-  --background-color: #ffffff;
+  --background-color: #151421;
   --indicator-active: #333456;
   --indicator-inactive: #9fa0b5;
+  --carosel-btn: #ffffff;
+  --carosel-btn-bg: #000000;
+  --bg-white: #404040;
+  --bg-light: #100f19;
+  --main-title-color: #ffffff;
+  --card-bg: #100f19;
+  --card-title: #ffffff;
+  --card-icon-title: #ffffff;
+  --wave-color:   #100f19;
 
   --twitter: #55acee;
   --facebook: #3b5998;

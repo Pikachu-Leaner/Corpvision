@@ -47,6 +47,42 @@
   color: var(--bs-carousel-caption-color, #fff);
 }
 
+.banner-wrapper {
+  position: relative; // Ensure the absolute content stays inside here
+
+  .carousel-custom-nav {
+    position: absolute;
+    bottom: 50px; // Adjust vertical distance from bottom
+    right: 50px; // Adjust horizontal distance from right
+    z-index: 10; // Ensures buttons sit on top of the image
+    display: flex;
+    align-items: center;
+
+    .btn-custom-nav {
+      background: var(--carosel-btn-bg);
+      border: 1px solid rgba(255, 255, 255, 0.5); // Semi-transparent white border
+      color: var(--carosel-btn);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; // Makes it a perfect circle
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+      outline: none;
+
+      i {
+        font-size: 16px; // Adjust icon size
+      }
+
+      // Active/Focus state to remove default browser outline
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
 .carousel-indicators {
   margin-bottom: 0;
 

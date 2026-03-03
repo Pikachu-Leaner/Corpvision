@@ -63,9 +63,14 @@
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
-  color: var(--heading-color);
+  color: var(--card-title);
   margin-top: 10px;
   &:hover {
     color: var(--btn);
   }
+}
+
+.card
+{
+  background-color: var(--card-bg);
 }

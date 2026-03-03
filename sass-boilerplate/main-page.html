@@ -160,7 +160,7 @@
                 </div>
                 <!-- Button for carousel-->
                 <div class="carousel-custom-nav">
-                    <button class="btn-custom-nav me-2" type="button" data-bs-target="#carouselExampleIndicators"
+                    <button class="btn-custom-nav me-3" type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="prev">
                         <i class="fas fa-arrow-left"></i>
                     </button>
@@ -170,25 +170,27 @@
                     </button>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
+                <!-- Wave below banner -->
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
+                <div class="wave-wrapper">
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28"
+                        preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave"
+                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" />
+                        </g>
+                    </svg>
+                </div>
+
             </div>
         </div>
     </div>
-    <!-- Wave below banner -->
-    <path fill-opacity="1">
-        <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
-            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-              M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
-        </animate>
-    </path>
+
 
     <!-- About us -->
     <section class="p-5 bg-white">
@@ -349,6 +351,9 @@
                         <a href="#url" class="title">Work Expertise</a>
                         <p class="description">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
                     </div>
+                    <a href="#url" class="btn btn-style1 mt-3 d-block">
+                        Learn More
+                    </a>
                 </div>
                 <!-- banner 2-->
                 <div class="col-lg-4">
@@ -361,6 +366,9 @@
                         <a href="#url" class="title">Product Development</a>
                         <p class="description">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
                     </div>
+                    <a href="#url" class="btn btn-style1 mt-3 d-block">
+                        Learn More
+                    </a>
 
                 </div>
                 <!-- banner 3-->
@@ -374,6 +382,9 @@
                         <a href="#url" class="title">Software Development</a>
                         <p class="description">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
                     </div>
+                    <a href="#url" class="btn btn-style1 mt-3 d-block">
+                        Learn More
+                    </a>
                 </div>
             </div>
     </section>
@@ -508,7 +519,7 @@
         </div>
     </section>
     <!-- Company logos -->
-    <section class="bg-light pt-5 mt-5 pb-5 mb-5">
+    <section class="bg-light pt-5 pb-5">
         <div class="container  p-0 mt-15">
             <div class="row company-logos align-items-center justify-content-center mt-5 mb-5">
 
@@ -535,7 +546,7 @@
         </div>
     </section>
     <!-- Your success is our success -->
-    <section class="bg-white pt-5 mt-5">
+    <section class="bg-white pt-5 pb-5">
         <div class="container p-0 mt-15">
             <!-- Left col -->
             <div class="row justify-content-evenly">
@@ -781,14 +792,14 @@
                             <a href="#" class="category1">Startup Business</a>
                             <a href="#" class="d-block h5 card-title1 mt-2 mb-1">Hello world!</a>
                         </div>
-                        <div
-                            class="card-footer bg-white border-top p-4 d-flex align-items-center justify-content-between">
+                        <div class="card-footer border-top p-4 d-flex align-items-center justify-content-between">
                             <div class="author d-flex align-items-center">
                                 <a href="#" class="post-author">
                                     <img src="../images/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg" alt=""
                                         class="img-fluid rounded-circle">
                                 </a>
-                                <span class="text-muted small">by W3Layouts</span>
+                                <span class="text-muted small-text">by<a class="card-icon-title"
+                                        href="#">W3Layouts</a></span>
                             </div>
                             <div class="date text-muted small">April 1, 2021</div>
                         </div>
@@ -808,13 +819,13 @@
                             <a href="#" class="d-block h5 card-title1 mt-2 mb-1">Companies in NY launched a joint
                                 project on a three-tower hall</a>
                         </div>
-                        <div
-                            class="card-footer bg-white border-top p-4 d-flex align-items-center justify-content-between">
+                        <div class="card-footer border-top p-4 d-flex align-items-center justify-content-between">
                             <div class="author d-flex align-items-center">
                                 <a href="#" class="post-author">
                                     <img src="../images/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg" alt=""
                                         class="img-fluid rounded-circle">
-                                    <span class="text-muted small">by W3Layouts</span>
+                                    <span class="text-muted small-text">by<a class="card-icon-title"
+                                            href="#">W3Layouts</a></span>
                                 </a>
                             </div>
                             <div class="date text-muted small">April 1, 2021</div>
@@ -835,13 +846,13 @@
                             <a href="#" class="d-block h5 card-title1 mt-2 mb-1">Design breakthrough upgrades the
                                 product and ready to launch</a>
                         </div>
-                        <div
-                            class="card-footer bg-white border-top p-4 d-flex align-items-center justify-content-between">
+                        <div class="card-footer border-top p-4 d-flex align-items-center justify-content-between">
                             <div class="author d-flex align-items-center">
                                 <a href="#" class="post-author">
                                     <img src="../images/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg" alt=""
                                         class="img-fluid rounded-circle">
-                                    <span class="text-muted small">by W3Layouts</span>
+                                    <span class="text-muted small-text">by<a class="card-icon-title"
+                                            href="#">W3Layouts</a></span>
                                 </a>
                             </div>
                             <div class="date text-muted small">April 1, 2021</div>
@@ -991,27 +1002,28 @@
         </div>
 
         <!-- website end-->
-        <section class="ending text-center ">
+        <section class="ending text-center">
             <div class="container">
                 <p class="CopyRights copy-footer-29">© 2025 Corp Vision All Rights Reserved |
                     WordPress Theme by <a href="https://w3layouts.com/">
                         W3Layouts. </a>
                 </p>
             </div>
-            <!-- Button to move to top-->
-            <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
-                <span class="fa fa-angle-up">
-                </span></button>
-        </section>
-    </footer>
 
-    <!-- boostrap script-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Button to move to top-->
+            <button type="button" class="btn btn-success btn-back-to-top" id="btn-back-to-top"
+                aria-label="Scroll to top"><i class="fa fa-chevron-up"></i>
+            </button>
+        </section>
+
+        <!-- boostrap script-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
+</html>
 <!-- <button class="btn btn-primary rounded-circle" type="submit">Button</button>
 <i class="fa-regular fa-moon"></i> -->

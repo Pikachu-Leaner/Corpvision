@@ -77,21 +77,45 @@
 }
 
 .footer-container .container .footer-title-29 {
-    font-size: 22px;
-    line-height: 28px;
-    margin-bottom: 25px;
-    font-weight: 400;
-    position: relative;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-
-
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  position: relative !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.ending .container .copy-footer-29 
-{
- margin-top: 20px;
- margin-bottom: 0px;
+.ending .copy-footer-29 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+.bg-white {
+  background-color: var(--bg-white) !important;
+}
+
+.bg-light {
+  background-color: var(--bg-light) !important;
+}
+
+.text-muted {
+  padding-left: 4px;
+  color: var(--font-color) !important;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.card-icon-title {
+  font-size: 16px;
+  color: var(--heading-color);
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: capitalize;
+  padding-left: 4px;
+
+  &:hover {
+    color: #00a63f;
+  }
+}
